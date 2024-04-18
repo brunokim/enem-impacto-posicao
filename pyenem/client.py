@@ -12,9 +12,9 @@ from pyenem.cache import Cache
 @define
 class Client:
     cache_dir = field(converter=Path, validator=instance_of(Path))
+    gcp_project = field(validator=instance_of(str))
+    bucket_name = field(validator=instance_of(str))
     bucket_path = field(converter=Path, validator=instance_of(Path))
-    gcp_project = field(default="enem-microdata", validator=instance_of(str))
-    bucket_name = field(default="enem-microdata", validator=instance_of(str))
 
     cache = field(init=False)
     bq = field(init=False)
@@ -62,9 +62,10 @@ class Client:
     
         return self.cache.get_table(sql)
     
-    def query(self, sql, fetch_strategy='df'):
-        table = self.cache.get_table(sql)
-        if table is not None:
-            return table
+    def query(self, sql, fetch_strategy='df', use_cache=True):
+        if use_cache:
+            table = self.cache.get_table(sql)
+            if table is not None:
+                return table
         f = {'df': self.df_fetch, 'gcs': self.gcs_fetch}[fetch_strategy]
         return f(sql)
