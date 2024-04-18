@@ -4,7 +4,7 @@
   se estivesse na 1ª posição.
 
 Este trabalho, realizado para a obtenção do título de mestre _lato sensu_ no curso de 
-MBA de Data Science da USP/ESALQ, busca quantificar o efeito da fadiga ao realizar
+MBA de Data Science da USP/ESALQ, busca quantificar o efeito fadiga ao realizar
 a prova do Enem. Com 5h30 de duração no 1º dia, e 5h no 2º dia, seria esperado que o
 cansaço causasse uma perda de habilidade entre o começo e o fim da prova.
 
