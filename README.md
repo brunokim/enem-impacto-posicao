@@ -18,9 +18,9 @@ sabem e aconselham:
   "Fazer a prova" também é uma habilidade em si que precisa ser treinada.
 - para garantir um resultado mais consistente, é importante realizar as questões mais fáceis
   primeiro, quando a fadiga é menor.
-  Busque ler toda a prova, selecione as questões que aparentam exigir menos trabalho, e faça
-  primeiro.
-  Se alguma questão estiver demorando mais do que o esperado, deixe para depois.
+  Busque ler toda a prova, selecione as questões que aparentam exigir menos trabalho, e resolva
+  estas primeiro.
+  Se alguma questão estiver demorando mais do que o esperado, deixe para depois!
 
 ## Instalação
 
